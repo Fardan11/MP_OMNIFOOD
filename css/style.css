@@ -1,7 +1,54 @@
+/* 
+-TYPOGRAPHY:
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Font Weight:
+
+-Line height: 
+default:1
+
+2)Color: 
+Primary : #e67e22
+-Tints:
+-Shades: 
+-Accents: 
+-Greys: 
+
+--SHADOWS:
+
+
+--BORDER RADIUS
+
+--WHITE SPACE: 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+
+*/
+
+/* .test { */
+/* background-color: red; */
+/* color: white; */
+/* width: 1000px; */
+/* max width gets the px of parent, apapts to the viewport  */
+/* max-width: 1000px; */
+/* padding: 100px; */
+/* max-width: 50rem; */
+/* 1rem =16px  =>50*16*/
+/* font-size: 2rem; */
+/* } */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -9,4 +56,23 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: blueviolet;
+
+  /* creates a grid with two equal-width columns, each taking up one fraction (or 50%) of the available space. */
+}
+.hero-img {
+  width: 100%;
 }
