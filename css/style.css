@@ -16,7 +16,7 @@ used:1.6
 2)Color: 
 Primary : #e67e22
 -Tints:#f8d8bd2
--Shades: 
+-Shades: #b8651b
 -Accents: 
 -Greys: 
 
@@ -160,4 +160,7 @@ body {
 .delivered-text {
   font-size: 1.8rem;
   font-weight: 500;
+}
+.delivered-text span {
+  color: #b8651b;
 }
