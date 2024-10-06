@@ -15,8 +15,10 @@ BOLD 700
 
 -Line height: 
 default:1
-Used:1.05
+Small:1.05
+Medium:1.2
 used:1.6
+
 
 2)Color: 
 Primary : #e67e22
@@ -64,21 +66,67 @@ body {
   font-family: "Rubik";
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  /* color: ; */
 }
 
 /* ************ */
 /* GENRAL REUSABLE COMPONENT */
+/* ***************** */
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+.grid--2--cols{
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(2, 1fr);
+} 
+
+/* .grid--3--cols {
+  grid-template-columns: 1fr 1fr 1fr;
+} */
+
+/* .section-how div div {
+  padding: 50px;
+  font-size: 20px;
+  background-color: #333;
+} */
+
+.heading-primary,.heading-secondary{
+  color: #333;
+  /* color: #45260a; */
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+
+}
 .heading-primary {
   /* 52px=5.2rem */
   font-size: 5.2rem;
-  font-weight: 700;
   line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
+  font-weight: 700;
 }
+.heading-secondary{
+  font-size: 4.2rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
 
+}
+.subheading{
+  /* as span inline element, turn it ito block */
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #b8651b;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  
+
+}
 /* as the button are link, so sudo class */
 .btn:link,
 .btn-visited {
@@ -125,9 +173,9 @@ body {
   margin-right: 1.6rem;
 }
 
-/* ************ */
+/* *************/
 /* HEADER */
-/* ************ */
+/* *************/
 .header {
   display: flex;
   /* tip: 2 items: logo & nav.
@@ -240,3 +288,16 @@ body {
 .delivered-text span {
   color: #b8651b;
 }
+
+/* ************ */
+/* HOW IT WORKS */
+/* ************ */
+.section-how {
+  padding: 9.6rem 0;
+  background-color: #fff;
+}
+.step-img{
+  width: 50%;
+}
+
+
